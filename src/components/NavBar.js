@@ -74,7 +74,9 @@ export const NavBar = () => {
                                         ? "active navbar-link"
                                         : "navbar-link"
                                 }
-                                onClick={() => onUpdateActiveLink("projects")}>
+                                onClick={() =>
+                                    onUpdateActiveLink("Contact me")
+                                }>
                                 Contact me
                             </Nav.Link>
                         </Nav>

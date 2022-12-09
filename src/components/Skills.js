@@ -38,9 +38,13 @@ export const Skills = () => {
                             <h2>Skills</h2>
                             <p>
                                 I have experience with a wide range of web
-                                development technologies, including JavaScript,
-                                React, Node.js, CSS, MongoDB, Git, and Redux. I
-                                am proficient in the use of JavaScript, which
+                                development technologies, including
+                                <span className='keyword'>
+                                    {" "}
+                                    JavaScript, React, Node.js, CSS, MongoDB,
+                                    Git, and Redux.
+                                </span>{" "}
+                                I am proficient in the use of JavaScript, which
                                 allows me to create dynamic, interactive web
                                 pages and applications. Additionally, I am
                                 skilled in the use of React and Node.js,

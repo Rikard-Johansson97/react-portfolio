@@ -9,19 +9,22 @@ import "animate.css";
 export const Projects = () => {
     const projects = [
         {
-            title: "sort visualizer",
+            title: "Sort Visualizer",
             description: "Sorting Algorithms",
             imgUrl: projImg1,
+            websiteUrl: "https://resonant-sherbet-9c964f.netlify.app/",
         },
         {
-            title: "Business Startup",
+            title: "E-Commerce",
             description: "Design & Development",
             imgUrl: projImg2,
+            websiteUrl: "https://fancy-bubblegum-b49771.netlify.app/",
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Weather Cast",
+            description: "API & Design",
             imgUrl: projImg3,
+            websiteUrl: "https://precious-treacle-5ec4c8.netlify.app/",
         },
     ];
 

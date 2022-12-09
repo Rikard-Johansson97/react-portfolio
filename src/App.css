@@ -1,3 +1,6 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /************ Default Css ************/
 * {
   margin: 0;
@@ -57,12 +60,8 @@ input:focus, textarea:focus, select:focus {
 	}
 }
 
-p.success {
-	color: green;
-}
-
-p.danger {
-	color: red;
+.keyword{
+  color: white;
 }
 /************ Navbar Css ************/
 nav.navbar {
@@ -82,7 +81,7 @@ nav.navbar.scrolled {
   border-bottom: #2cb67d solid;
 }
 nav.navbar a.navbar-brand {
-    width: 6%;
+    width: 40px;
     padding: 0;
     margin: 10px 0;
 }
@@ -97,6 +96,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  margin: 5px;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
@@ -366,7 +366,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill p {
     color: #B8B8B8;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
@@ -393,6 +393,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 80px 0;
   position: relative;
   background-color: #1d1d1d;
+  box-shadow: 0 0 10px black;
 }
 .project h2 {
 	font-size: 45px;
@@ -401,7 +402,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .project p {
   color: #B8B8B8;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
@@ -410,11 +411,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
+  border-radius: 20px;
+  margin: 10px auto;
   overflow: hidden;
-  margin-bottom: 24px;
-  width: 100%;
-  height: 100%;
+  width: 220px;
+  height: 200px;
   border: #2cb67d solid;
   cursor: pointer;
 }
@@ -458,6 +459,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-txtx span {
   font-style: italic;
+  color: white;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
@@ -470,21 +472,68 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+/************ Contact Css ************/
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px;
+  text-align: center;
+}
+.contact-container h2{
+  font-size: 40px;
+}
+.contact-info{
+  font-size: 12px;
+  color: gray;
+  width: 70%;
+  margin: 20px 0 10px 0;
+}
+.contact-item-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-item{
+  margin: 10px;
+}
+.contact-icon{
+  filter: brightness(0) invert(1); 
+  border-radius: 50%;
+}
+.contact-title{
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  margin: 10px;
+}
+.contact-text{
+  font-size: 12px;
+  font-weight: 200;
+  color: gray;
+}
+.contact-icon{
+  width: 40px;
+}
 /************ Footer Css ************/
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0 0 50px 0;
   background-image: url('./assets/img/cartographer-1920x1080.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 20px;
+  background-position: center center; 
+  padding: 30px;
+  border-top: solid #2cb67d;
 }
-.footer-avatar{
-  border-radius: 30% 70% 55% 45% / 32% 34% 66% 68%; 
-  border:#2cb67d solid 2px;
+.footer-social-icon{
+  display: flex;
 }
-.footer img {
-  width: 20%;
+.footer-social-icon a img{
+  width: 80%;
 }
 .footer p {
   font-weight: 400;
