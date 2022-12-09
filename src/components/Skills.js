@@ -7,9 +7,6 @@ import git from "../assets/img/Git.png";
 import redux from "../assets/img/ReduxIcon.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import arrow1 from "../assets/img/profile-edit.png";
-import arrow2 from "../assets/img/profile-edit.png";
-import colorSharp from "../assets/img/skillsBg.png";
 
 export const Skills = () => {
     const responsive = {
@@ -40,39 +37,50 @@ export const Skills = () => {
                         <div className='skill-bx wow zoomIn'>
                             <h2>Skills</h2>
                             <p>
-                                I have under the past year learned me the skills
-                                below.
+                                I have experience with a wide range of web
+                                development technologies, including JavaScript,
+                                React, Node.js, CSS, MongoDB, Git, and Redux. I
+                                am proficient in the use of JavaScript, which
+                                allows me to create dynamic, interactive web
+                                pages and applications. Additionally, I am
+                                skilled in the use of React and Node.js,
+                                allowing me to create responsive user interfaces
+                                and back-end services for web applications. I
+                                have experience with MongoDB for data storage,
+                                as well as Git for version control. I also have
+                                experience with Redux for state management in
+                                React applications.
                             </p>
                             <Carousel
                                 responsive={responsive}
                                 infinite={true}
                                 className='owl-carousel owl-theme skill-slider'>
                                 <div className='item'>
-                                    <img src={javascript} alt='Image' />
+                                    <img src={javascript} alt='skill-icon' />
                                     <h5>Javascript</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={react} alt='Image' />
+                                    <img src={react} alt='skill-icon' />
                                     <h5>React</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={node} alt='Image' />
+                                    <img src={node} alt='skill-icon' />
                                     <h5>Node.js</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={css} alt='Image' />
+                                    <img src={css} alt='skill-icon' />
                                     <h5>CSS</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={mongoDb} alt='Image' />
+                                    <img src={mongoDb} alt='skill-icon' />
                                     <h5>Mongo DB</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={git} alt='Image' />
+                                    <img src={git} alt='skill-icon' />
                                     <h5>Git</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={redux} alt='Image' />
+                                    <img src={redux} alt='skill-icon' />
                                     <h5>Redux</h5>
                                 </div>
                             </Carousel>

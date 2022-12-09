@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/AvatarMaker.png";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
@@ -69,6 +66,16 @@ export const NavBar = () => {
                                 }
                                 onClick={() => onUpdateActiveLink("projects")}>
                                 Projects
+                            </Nav.Link>
+                            <Nav.Link
+                                href='#contact'
+                                className={
+                                    activeLink === "Contact"
+                                        ? "active navbar-link"
+                                        : "navbar-link"
+                                }
+                                onClick={() => onUpdateActiveLink("projects")}>
+                                Contact me
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

@@ -11,7 +11,7 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState("");
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const [index, setIndex] = useState(1);
+    const [, setIndex] = useState(1);
     const toRotate = ["Web Dev", "React Dev", "JavaScript Dev"];
     const period = 2000;
 
@@ -23,7 +23,7 @@ export const Banner = () => {
         return () => {
             clearInterval(ticker);
         };
-    }, [text]);
+    });
 
     const tick = () => {
         let i = loopNum % toRotate.length;
@@ -61,7 +61,7 @@ export const Banner = () => {
                                 Welcome to my Portfolio
                             </span>
                             <h1>
-                                {`I'm Rikard a`}{" "}
+                                {`Hi! i'm Rikard a`}{" "}
                                 <span
                                     className='txt-rotate'
                                     dataPeriod='1000'
@@ -70,12 +70,14 @@ export const Banner = () => {
                                 </span>
                             </h1>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen
-                                book.
+                                A highly motivated Junior Web Developer with a
+                                passion for creating and developing modern,
+                                user-friendly web applications. Proven ability
+                                to collaborate with other developers and
+                                stakeholders to develop and refine features.
+                                Possess strong problem-solving skills, excellent
+                                communication skills, and a knack for working
+                                with code.
                             </p>
                         </div>
                     </Col>

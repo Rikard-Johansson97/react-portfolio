@@ -1,4 +1,4 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/sortVizulizer.png";
 import projImg2 from "../assets/img/E-commrence.png";
@@ -23,21 +23,6 @@ export const Projects = () => {
             description: "Design & Development",
             imgUrl: projImg3,
         },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
-        },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
-        },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
-        },
     ];
 
     return (
@@ -47,7 +32,26 @@ export const Projects = () => {
                     <Col size={12}>
                         <div>
                             <h2>Projects</h2>
-                            <p>Skriv om dina project här!</p>
+                            <p>
+                                I have worked on a variety of projects involving
+                                JavaScript, React, Node.js, CSS, MongoDB, Git,
+                                and Redux. I have used these technologies to
+                                create web applications with a modern design,
+                                efficient user experience, and secure database
+                                integration. I have experience with back-end
+                                development, creating database schemas and APIs
+                                to facilitate communication between the server
+                                and the front-end. I have also developed
+                                front-end applications using React, Redux, and
+                                other libraries to create interactive UIs. I
+                                have written code to utilize the Node.js
+                                server-side runtime environment to create APIs
+                                and database interactions. Additionally, I have
+                                worked with MongoDB, a NoSQL database, to store
+                                and retrieve data for web applications. I have
+                                also leveraged Git for version control and
+                                collaborated on projects with other developers.
+                            </p>
                             <Row>
                                 {projects.map((project, index) => {
                                     return (
