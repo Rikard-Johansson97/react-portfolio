@@ -234,6 +234,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  width: 100vw;
   border-bottom: #2cb67d solid;
 }
 .banner .tagline {
@@ -264,12 +265,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .header-img-container{
   position: relative;
+  overflow: hidden;
 }
 .banner .header-profile {
   border-radius: 30% 70% 55% 45% / 32% 34% 66% 68%; 
   box-shadow: 0 0 26px black;
   animation: floating 15s linear infinite;
   width: 120%;
+  overflow: hidden;
 }
 .icon-container{
   position: relative;
@@ -326,18 +329,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @keyframes floating {
 	0% {
 		transform: translate(0%,0%);	
+    -ms-transform-origin: translate(0%,0%);
+    -webkit-transform-origin: translate(0%,0%);
 	}
 	25% {
 		transform: translate(5%,15%);	
+    -ms-transform-origin: translate(5%,15%);
+    -webkit-transform-origin: translate(5%,15%);
 	}	
 	50% {
 		transform: translate(10%,5%);	
+    -ms-transform-origin: translate(10%,5%);
+    -webkit-transform-origin: translate(10%,5%);
 	}	
 	75% {
 		transform: translate(0%,15%);	
+    -ms-transform-origin: translate(0%,15%);
+    -webkit-transform-origin: translate(0%,15%);
 	}	
 	100% {
 		transform: translate(0%,0%);
+    -ms-transform-origin: translate(0%,0%);
+    -webkit-transform-origin: translate(0%,0%);
 	}			
 }
 .txt-rotate > .wrap {
